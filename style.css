@@ -1,0 +1,156 @@
+.camera__body{
+    position: relative;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1px;
+}
+
+.camera__part{
+    cursor: pointer;
+    transition: all .6s ease-in;
+}
+
+.camera__part--1{
+    position: absolute;
+    left: 56px;
+    top: -108px;
+    height: 261px;
+    width: 100px;
+    background-color: #FE6B01;
+    transform: rotate(45deg);
+    z-index: 4;
+}
+
+.camera__part--2{
+    position: absolute;
+    left: 215px;
+    top: -29px;
+    height: 261px;
+    width: 100px;
+    background-color: #01AACB;
+    transform: rotate(-45deg);
+    z-index: 3;
+}
+
+.camera__part--3{
+    position: absolute;
+    left: 156px;
+    top: 130px;
+    height: 261px;
+    width: 100px;
+    background-color: #47BB96;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.camera__part--4{
+    position: absolute;
+    left: 0px;
+    top: 91px;
+    height: 261px;
+    width: 100px;
+    background-color: #333333;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.camera__part--text1{
+    transform: rotate(-45deg);
+    position: absolute;
+    color: #fff;
+    font-weight: 800;
+    transition: all .6s ease-in;
+}
+
+.camera__part--1__title{
+    
+    top: 157px;
+    left: 36px;
+    
+}
+
+.camera__part--1__sub{
+    
+    top: 164px;
+    left: 36px;
+}
+
+.camera__part--2__title{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 65px;
+    left: 50px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.camera__part--2__sub{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 77px;
+    left: 26px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.camera__part--3__title{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 98px;
+    left: 18px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.camera__part--3__sub{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 109px;
+    left: 14px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.camera__part--4__title{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 114px;
+    left: 54px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.camera__part--4__sub{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 127px;
+    left: 30px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.camera__list--1{
+    width: 179px;
+    height: 147px;
+    z-index: 20;
+    background: #fff;
+    position: absolute;
+    top: 58px;
+    list-style: none;
+    padding: 20px 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s ease-in;
+    
+}
+
+.camera__item{
+    padding: 15px 0;
+
+}
