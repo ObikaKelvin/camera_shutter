@@ -154,3 +154,9 @@
     padding: 15px 0;
 
 }
+
+.camera__icon{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
