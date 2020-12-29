@@ -83,7 +83,7 @@ document.querySelector('.camera__icon').addEventListener('click', function(){
         cur.style.display = 'block';
     })
 
-    document.querySelector('.camera__text').style.display = 'none';
+    document.querySelector('.camera__text').style.display = 'block';
     
     document.querySelector('.camera__list--1').style.visibility = 'hidden';
     document.querySelector('.camera__list--1').style.opacity = '0';
