@@ -1,38 +1,27 @@
-document.querySelector('.camera__part--1').addEventListener('click', function(){
-    this.style.transform = 'rotate(90deg)';
-    this.style.left = '100px';
+document.querySelector('.cp1').addEventListener('click', function(){
     
-    document.querySelectorAll('.camera__part--text1').forEach(cur => {
-        cur.style.transform = 'rotate(-90deg)';
-    })
-
-    document.querySelector('.camera__part--1__title').style.left = '52px';
-    document.querySelector('.camera__part--1__title').style.top = '15px';
-    document.querySelector('.camera__part--1__title').style.fontSize = '48px';
-
-    document.querySelector('.camera__part--1__sub').style.left = '65px';
-    document.querySelector('.camera__part--1__sub').style.top = '190px';
+    this.classList.add('cp1__active');
+    document.querySelector('.cp1__title').classList.add('cp1__title--active');
+    document.querySelector('.cp1__sub').classList.add('cp1__sub--active');
     
+    document.querySelector('.cp2').style.transform = 'rotate(0deg)';
+    document.querySelector('.cp2').style.top = '20px';
 
+    document.querySelector('.cp3').style.transform = 'rotate(90deg)';
+    document.querySelector('.cp3').style.left = '90px';
 
-    document.querySelector('.camera__part--2').style.transform = 'rotate(0deg)';
-    document.querySelector('.camera__part--2').style.top = '20px';
+    document.querySelector('.cp4').style.transform = 'rotate(0deg)';
+    document.querySelector('.cp4').style.top = '20px';
 
-    document.querySelector('.camera__part--3').style.transform = 'rotate(90deg)';
-    document.querySelector('.camera__part--3').style.left = '90px';
-
-    document.querySelector('.camera__part--4').style.transform = 'rotate(0deg)';
-    document.querySelector('.camera__part--4').style.top = '20px';
-
-    document.querySelectorAll('.camera__part--text2').forEach(cur => {
+    document.querySelectorAll('.cp2__text').forEach(cur => {
         cur.style.display = 'none';
     })
 
-    document.querySelectorAll('.camera__part--text3').forEach(cur => {
+    document.querySelectorAll('.cp3__text').forEach(cur => {
         cur.style.display = 'none';
     })
 
-    document.querySelectorAll('.camera__part--text4').forEach(cur => {
+    document.querySelectorAll('.cp4__text').forEach(cur => {
         cur.style.display = 'none';
     })
 
@@ -46,40 +35,31 @@ document.querySelector('.camera__part--1').addEventListener('click', function(){
 
 
 document.querySelector('.camera__icon').addEventListener('click', function(){
-    document.querySelector('.camera__part--1').style.transform = 'rotate(45deg)';
-    document.querySelector('.camera__part--1').style.left = '56px';
     
-    document.querySelectorAll('.camera__part--text1').forEach(cur => {
-        cur.style.transform = 'rotate(-45deg)';
-    })
-
-    document.querySelector('.camera__part--1__title').style.left = '36px';
-    document.querySelector('.camera__part--1__title').style.top = '157px';
-    document.querySelector('.camera__part--1__title').style.fontSize = '14px';
-
-    document.querySelector('.camera__part--1__sub').style.left = '36px';
-    document.querySelector('.camera__part--1__sub').style.top = '164px';
+    document.querySelector('.cp1').classList.remove('cp1__active');
+    document.querySelector('.cp1__title').classList.remove('cp1__title--active');
+    document.querySelector('.cp1__sub').classList.remove('cp1__sub--active');
     
 
 
-    document.querySelector('.camera__part--2').style.transform = 'rotate(-45deg)';
-    document.querySelector('.camera__part--2').style.top = '-29px';
+    document.querySelector('.cp2').style.transform = 'rotate(-45deg)';
+    document.querySelector('.cp2').style.top = '-29px';
 
-    document.querySelector('.camera__part--3').style.transform = 'rotate(45deg)';
-    document.querySelector('.camera__part--3').style.left = '156px';
+    document.querySelector('.cp3').style.transform = 'rotate(45deg)';
+    document.querySelector('.cp3').style.left = '156px';
 
-    document.querySelector('.camera__part--4').style.transform = 'rotate(-45deg)';
-    document.querySelector('.camera__part--4').style.top = '91px';
+    document.querySelector('.cp4').style.transform = 'rotate(-45deg)';
+    document.querySelector('.cp4').style.top = '91px';
 
-    document.querySelectorAll('.camera__part--text2').forEach(cur => {
+    document.querySelectorAll('.cp2__text').forEach(cur => {
         cur.style.display = 'block';
     })
 
-    document.querySelectorAll('.camera__part--text3').forEach(cur => {
+    document.querySelectorAll('.cp3__text').forEach(cur => {
         cur.style.display = 'block';
     })
 
-    document.querySelectorAll('.camera__part--text4').forEach(cur => {
+    document.querySelectorAll('.cp4__text').forEach(cur => {
         cur.style.display = 'block';
     })
 
