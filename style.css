@@ -13,7 +13,7 @@
 
 .camera__part{
     cursor: pointer;
-    transition: all .3s ease-in;
+    transition: all .6s ease-in;
 }
 
 .camera__part--1{
@@ -65,7 +65,7 @@
     position: absolute;
     color: #fff;
     font-weight: 800;
-    transition: all .3s ease-in;
+    transition: all .6s ease-in;
 }
 
 .camera__part--1__title{
@@ -146,7 +146,7 @@
     padding: 20px 20px;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s ease-in;
+    transition: all .6s ease-in;
     
 }
 
